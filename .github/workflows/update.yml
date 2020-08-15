@@ -31,30 +31,30 @@ jobs:
       - name: Setup git remote
         run: git remote add actions git@github.com:${{ github.repository }}.git
 
-      - name: Update patients data
-        timeout-minutes: 2
-        uses: nathane/curl@master
-        with:
-          args: "-L --insecure 'https://api.pmo.gov.et/v1/patients/?format=json&limit=10000000&cache_bust=${{ github.run_id }}' | jq '.' > patients.json"
+      # - name: Update patients data
+      #   timeout-minutes: 2
+      #   uses: nathane/curl@master
+      #   with:
+      #     args: "-L --insecure 'https://api.pmo.gov.et/v1/patients/?format=json&limit=10000000&cache_bust=${{ github.run_id }}' | jq '.' > patients.json"
 
-      - name: Commit patients.json updates
-        run: |
-          if [[ `git status --porcelain` ]]; then
-            git add patients.json
-            git commit -S -m "Update patients.json"
-          fi
+      # - name: Commit patients.json updates
+      #   run: |
+      #     if [[ `git status --porcelain` ]]; then
+      #       git add patients.json
+      #       git commit -S -m "Update patients.json"
+      #     fi
 
-      - name: Update cases data
-        uses: nathane/curl@master
-        with:
-          args: "-L --insecure 'https://api.pmo.gov.et/v1/cases/?format=json&cache_bust=${{ github.run_id }}' | jq '.' > cases.json"
+      # - name: Update cases data
+      #   uses: nathane/curl@master
+      #   with:
+      #     args: "-L --insecure 'https://api.pmo.gov.et/v1/cases/?format=json&cache_bust=${{ github.run_id }}' | jq '.' > cases.json"
 
-      - name: Commit cases.json updates
-        run: |
-          if [[ `git status --porcelain` ]]; then
-            git add cases.json
-            git commit -S -m "Update cases.json"
-          fi
+      # - name: Commit cases.json updates
+      #   run: |
+      #     if [[ `git status --porcelain` ]]; then
+      #       git add cases.json
+      #       git commit -S -m "Update cases.json"
+      #     fi
 
       - name: Update stats data
         uses: nathane/curl@master
