@@ -7,14 +7,14 @@
     "isoCode": "ET",
     "lat": 9.145
   },
-  "updatedDateTime": "2020-08-21T06:01:45.3726336Z",
+  "updatedDateTime": "2020-08-21T10:33:56.8902462Z",
   "stats": {
     "totalConfirmedCases": 35836,
-    "newlyConfirmedCases": 1778,
+    "newlyConfirmedCases": 0,
     "totalDeaths": 620,
-    "newDeaths": 20,
+    "newDeaths": 0,
     "totalRecoveredCases": 13536,
-    "newlyRecoveredCases": 228,
+    "newlyRecoveredCases": 0,
     "history": [
       {
         "date": "2020-01-22T00:00:00",
@@ -1287,6 +1287,12 @@
         "confirmed": 35836,
         "deaths": 620,
         "recovered": 13536
+      },
+      {
+        "date": "2020-08-21T00:00:00",
+        "confirmed": 35836,
+        "deaths": 620,
+        "recovered": 13536
       }
     ],
     "breakdowns": [
@@ -1300,11 +1306,11 @@
           "lat": 9.145
         },
         "totalConfirmedCases": 35836,
-        "newlyConfirmedCases": 1778,
+        "newlyConfirmedCases": 0,
         "totalDeaths": 620,
-        "newDeaths": 20,
+        "newDeaths": 0,
         "totalRecoveredCases": 13536,
-        "newlyRecoveredCases": 228
+        "newlyRecoveredCases": 0
       }
     ]
   }
