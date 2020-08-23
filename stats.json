@@ -7,14 +7,14 @@
     "isoCode": "ET",
     "lat": 9.145
   },
-  "updatedDateTime": "2020-08-23T16:00:54.1783807Z",
+  "updatedDateTime": "2020-08-23T18:04:16.421604Z",
   "stats": {
-    "totalConfirmedCases": 39033,
-    "newlyConfirmedCases": 0,
-    "totalDeaths": 662,
-    "newDeaths": 0,
-    "totalRecoveredCases": 14480,
-    "newlyRecoveredCases": 0,
+    "totalConfirmedCases": 40671,
+    "newlyConfirmedCases": 1638,
+    "totalDeaths": 678,
+    "newDeaths": 16,
+    "totalRecoveredCases": 14995,
+    "newlyRecoveredCases": 515,
     "history": [
       {
         "date": "2020-01-22T00:00:00",
@@ -1302,9 +1302,9 @@
       },
       {
         "date": "2020-08-23T00:00:00",
-        "confirmed": 39033,
-        "deaths": 662,
-        "recovered": 14480
+        "confirmed": 40671,
+        "deaths": 678,
+        "recovered": 14995
       }
     ],
     "breakdowns": [
@@ -1317,12 +1317,12 @@
           "isoCode": "ET",
           "lat": 9.145
         },
-        "totalConfirmedCases": 39033,
-        "newlyConfirmedCases": 0,
-        "totalDeaths": 662,
-        "newDeaths": 0,
-        "totalRecoveredCases": 14480,
-        "newlyRecoveredCases": 0
+        "totalConfirmedCases": 40671,
+        "newlyConfirmedCases": 1638,
+        "totalDeaths": 678,
+        "newDeaths": 16,
+        "totalRecoveredCases": 14995,
+        "newlyRecoveredCases": 515
       }
     ]
   }
