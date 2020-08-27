@@ -7,7 +7,7 @@
     "isoCode": "ET",
     "lat": 9.145
   },
-  "updatedDateTime": "2020-08-27T06:00:32.1299969Z",
+  "updatedDateTime": "2020-08-27T10:24:33.61534Z",
   "stats": {
     "totalConfirmedCases": 43688,
     "newlyConfirmedCases": 0,
@@ -1320,6 +1320,12 @@
       },
       {
         "date": "2020-08-26T00:00:00",
+        "confirmed": 43688,
+        "deaths": 709,
+        "recovered": 15796
+      },
+      {
+        "date": "2020-08-27T00:00:00",
         "confirmed": 43688,
         "deaths": 709,
         "recovered": 15796
