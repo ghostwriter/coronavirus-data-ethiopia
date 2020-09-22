@@ -31,35 +31,53 @@ jobs:
       - name: Setup git remote
         run: git remote add actions git@github.com:${{ github.repository }}.git
 
-      # - name: Update patients data
-      #   timeout-minutes: 2
-      #   uses: nathane/curl@master
-      #   with:
-      #     args: "-L --insecure 'https://api.pmo.gov.et/v1/patients/?format=json&limit=10000000&cache_bust=${{ github.run_id }}' | jq '.' > patients.json"
+      - name: Update patients data
+        timeout-minutes: 2
+        uses: nathane/curl@master
+        with:
+          args: "-L --insecure 'https://api.pmo.gov.et/v1/patients/?format=json&limit=10000000&cache_bust=${{ github.run_id }}' | jq '.' > patients.json"
 
-      # - name: Commit patients.json updates
-      #   run: |
-      #     if [[ `git status --porcelain` ]]; then
-      #       git add patients.json
-      #       git commit -S -m "Update patients.json"
-      #     fi
+      - name: Check updated patients.json
+        run: |
+          if [ ! -s patients.json ]; then
+            git restore patients.json
+          fi
 
-      # - name: Update cases data
-      #   uses: nathane/curl@master
-      #   with:
-      #     args: "-L --insecure 'https://api.pmo.gov.et/v1/cases/?format=json&cache_bust=${{ github.run_id }}' | jq '.' > cases.json"
+      - name: Commit patients.json updates
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            git add patients.json
+            git commit -S -m "Update patients.json"
+          fi
 
-      # - name: Commit cases.json updates
-      #   run: |
-      #     if [[ `git status --porcelain` ]]; then
-      #       git add cases.json
-      #       git commit -S -m "Update cases.json"
-      #     fi
+      - name: Update cases data
+        uses: nathane/curl@master
+        with:
+          args: "-L --insecure 'https://api.pmo.gov.et/v1/cases/?format=json&cache_bust=${{ github.run_id }}' | jq '.' > cases.json"
+
+      - name: Check updated cases.json
+        run: |
+          if [ ! -s cases.json ]; then
+            git restore cases.json
+          fi
+
+      - name: Commit cases.json updates
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            git add cases.json
+            git commit -S -m "Update cases.json"
+          fi
 
       - name: Update stats data
         uses: nathane/curl@master
         with:
           args: "-L --insecure -H 'Cache-Control: no-cache' -H 'Subscription-Key: ${{ secrets.SUBSCRIPTION_KEY }}' 'https://api.smartable.ai/coronavirus/stats/ET?cache_bust=${{ github.run_id }}' | jq '.' > stats.json"
+
+      - name: Check updated stats.json
+        run: |
+          if [ ! -s stats.json ]; then
+            git restore stats.json
+          fi
 
       - name: Commit stats.json updates
         run: |
@@ -68,8 +86,26 @@ jobs:
             git commit -S -m "Update stats.json"
           fi
 
+      - name: Update timeline data
+        uses: nathane/curl@master
+        with:
+          args: "-L --insecure 'https://api.thevirustracker.com/free-api?countryTimeline=ET&cache_bust=${{ github.run_id }}' | jq '.' > timeline.json"
+
+      - name: Check updated timeline.json
+        run: |
+          if [ ! -s timeline.json ]; then
+            git restore timeline.json
+          fi
+
+      - name: Commit timeline.json updates
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            git add timeline.json
+            git commit -S -m "Update timeline.json"
+          fi
+
       - name: Push updates
         run: |
-          if [[ "$(git push -u actions master --porcelain)" == *"Done"* ]]; then
+          if [[ "$(git push -u actions main --porcelain)" == *"Done"* ]]; then
             echo "Git push was successful!"
           fi
