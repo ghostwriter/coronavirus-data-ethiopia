@@ -104,6 +104,24 @@ jobs:
             git commit -S -m "Update timeline.json"
           fi
 
+      - name: Update live data
+        uses: nathane/curl@master
+        with:
+          args: "-L --insecure 'https://api.covid19api.com/live/country/ethiopia?&cache_bust=${{ github.run_id }}' | jq '.' > live.json"
+
+      - name: Check updated live.json
+        run: |
+          if [ ! -s live.json ]; then
+            git restore live.json
+          fi
+
+      - name: Commit live.json updates
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            git add live.json
+            git commit -S -m "Update live.json"
+          fi
+
       - name: Push updates
         run: |
           if [[ "$(git push -u actions main --porcelain)" == *"Done"* ]]; then
