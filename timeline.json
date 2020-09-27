@@ -1390,6 +1390,13 @@
         "total_recoveries": 2430,
         "total_deaths": 1155
       },
+      "9/26/20": {
+        "new_daily_cases": 527,
+        "new_daily_deaths": 10,
+        "total_cases": 72700,
+        "total_recoveries": 2430,
+        "total_deaths": 1165
+      },
       "stat": "ok"
     }
   ]
