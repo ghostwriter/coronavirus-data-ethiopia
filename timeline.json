@@ -1453,6 +1453,13 @@
         "total_recoveries": 2430,
         "total_deaths": 1222
       },
+      "10/05/20": {
+        "new_daily_cases": 618,
+        "new_daily_deaths": 8,
+        "total_cases": 79437,
+        "total_recoveries": 2430,
+        "total_deaths": 1230
+      },
       "stat": "ok"
     }
   ]
