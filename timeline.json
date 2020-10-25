@@ -1586,6 +1586,13 @@
         "total_recoveries": 2430,
         "total_deaths": 1400
       },
+      "10/24/20": {
+        "new_daily_cases": 629,
+        "new_daily_deaths": 19,
+        "total_cases": 92858,
+        "total_recoveries": 2430,
+        "total_deaths": 1419
+      },
       "stat": "ok"
     }
   ]
