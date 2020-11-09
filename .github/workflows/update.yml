@@ -87,28 +87,28 @@ jobs:
 #             git commit -S -m "Update stats.json"
 #           fi
 
-      - name: Update timeline data
-        uses: nathane/curl@master
-        with:
-          args: "-L --insecure 'https://api.thevirustracker.com/free-api?countryTimeline=ET&cache_bust=${{ github.run_id }}' | jq '.' > timeline.json"
+#       - name: Update timeline data
+#         uses: nathane/curl@master
+#         with:
+#           args: "-L --insecure 'https://api.thevirustracker.com/free-api?countryTimeline=ET&cache_bust=${{ github.run_id }}' | jq '.' > timeline.json"
 
-      - name: Check updated timeline.json
-        run: |
-          if [ ! -s timeline.json ]; then
-            git restore timeline.json
-          fi
+#       - name: Check updated timeline.json
+#         run: |
+#           if [ ! -s timeline.json ]; then
+#             git restore timeline.json
+#           fi
 
-      - name: Commit timeline.json updates
-        run: |
-          if [[ `git status --porcelain` ]]; then
-            git add timeline.json
-            git commit -S -m "Update timeline.json"
-          fi
+#       - name: Commit timeline.json updates
+#         run: |
+#           if [[ `git status --porcelain` ]]; then
+#             git add timeline.json
+#             git commit -S -m "Update timeline.json"
+#           fi
 
       - name: Update live data
         uses: nathane/curl@master
         with:
-          args: "-L --insecure 'https://api.covid19api.com/country/ethiopia?_=${{ github.run_id }}' | jq '.' > live.json"
+          args: "-L --insecure 'https://api.covid19api.com/country/ethiopia?cache=${{ github.run_id }}' | jq '.' > live.json"
 
       - name: Check updated live.json
         run: |
