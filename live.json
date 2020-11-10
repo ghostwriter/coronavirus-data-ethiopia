@@ -4096,9 +4096,9 @@
     "Lat": "9.15",
     "Lon": "40.49",
     "Confirmed": 99982,
-    "Deaths": 0,
+    "Deaths": 1530,
     "Recovered": 60710,
-    "Active": 39272,
+    "Active": 37742,
     "Date": "2020-11-09T00:00:00Z"
   }
 ]
