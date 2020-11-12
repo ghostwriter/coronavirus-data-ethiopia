@@ -4123,10 +4123,10 @@
     "CityCode": "",
     "Lat": "9.15",
     "Lon": "40.49",
-    "Confirmed": 0,
-    "Deaths": 0,
+    "Confirmed": 100727,
+    "Deaths": 1545,
     "Recovered": 62497,
-    "Active": 0,
+    "Active": 36685,
     "Date": "2020-11-11T00:00:00Z"
   }
 ]
