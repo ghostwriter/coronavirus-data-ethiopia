@@ -4590,5 +4590,19 @@
     "Recovered": 95225,
     "Active": 20208,
     "Date": "2020-12-14T00:00:00Z"
+  },
+  {
+    "Country": "Ethiopia",
+    "CountryCode": "ET",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "9.15",
+    "Lon": "40.49",
+    "Confirmed": 117542,
+    "Deaths": 1813,
+    "Recovered": 96307,
+    "Active": 19422,
+    "Date": "2020-12-15T00:00:00Z"
   }
 ]
