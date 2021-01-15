@@ -5370,7 +5370,7 @@
     "Date": "2021-01-13T00:00:00Z"
   },
   {
-    "ID": "f803c530-aedf-4657-9e44-d694d8338f97",
+    "ID": "c551a91f-e04d-498c-a0d7-c834df49d5dc",
     "Country": "Ethiopia",
     "CountryCode": "ET",
     "Province": "",
@@ -5382,6 +5382,6 @@
     "Deaths": 2008,
     "Recovered": 114749,
     "Active": 13165,
-    "Date": "2021-01-14T00:00:00Z"
+    "Date": "2021-01-15T00:00:00Z"
   }
 ]
