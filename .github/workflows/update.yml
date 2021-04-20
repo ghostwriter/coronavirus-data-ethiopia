@@ -33,7 +33,7 @@ jobs:
 
 #       - name: Update patients data
 #         timeout-minutes: 2
-#         uses: nathane/curl@master
+#         uses: ghostwriter/curl@main
 #         with:
 #           args: "-L --insecure 'https://api.pmo.gov.et/v1/patients/?format=json&limit=10000000&cache_bust=${{ github.run_id }}' | jq '.' > patients.json"
 
@@ -51,7 +51,7 @@ jobs:
 #           fi
 
 #       - name: Update cases data
-#         uses: nathane/curl@master
+#         uses: ghostwriter/curl@main
 #         with:
 #           args: "-L --insecure 'https://api.pmo.gov.et/v1/cases/?format=json&cache_bust=${{ github.run_id }}' | jq '.' > cases.json"
 
@@ -69,7 +69,7 @@ jobs:
 #           fi
 
 #       - name: Update stats data
-#         uses: nathane/curl@master
+#         uses: ghostwriter/curl@main
 #         with:
 #           args: "-L --insecure -H 'Cache-Control: no-cache' -H 'Subscription-Key: ${{ secrets.SUBSCRIPTION_KEY }}' 'https://api.smartable.ai/coronavirus/stats/ET?cache_bust=${{ github.run_id }}' | jq '.' > stats.json"
 
@@ -87,7 +87,7 @@ jobs:
 #           fi
 
 #       - name: Update timeline data
-#         uses: nathane/curl@master
+#         uses: ghostwriter/curl@main
 #         with:
 #           args: "-L --insecure 'https://api.thevirustracker.com/free-api?countryTimeline=ET&cache_bust=${{ github.run_id }}' | jq '.' > timeline.json"
 
@@ -105,7 +105,7 @@ jobs:
 #           fi
 
       - name: Update live data
-        uses: nathane/curl@master
+        uses: ghostwriter/curl@main
         with:
           args: "-L --insecure 'https://api.covid19api.com/country/ethiopia?cache=${{ github.run_id }}' | jq '.' > live.json"
 
