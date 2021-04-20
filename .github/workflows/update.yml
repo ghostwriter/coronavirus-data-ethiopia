@@ -47,7 +47,7 @@ jobs:
 #         run: |
 #           if [[ `git status --porcelain` ]]; then
 #             git add patients.json
-#             git commit -S -m "Update patients.json"
+#             git commit -S --signoff -m "Update patients.json"
 #           fi
 
 #       - name: Update cases data
@@ -65,7 +65,7 @@ jobs:
 #         run: |
 #           if [[ `git status --porcelain` ]]; then
 #             git add cases.json
-#             git commit -S -m "Update cases.json"
+#             git commit -S --signoff -m "Update cases.json"
 #           fi
 
 #       - name: Update stats data
@@ -83,7 +83,7 @@ jobs:
 #         run: |
 #           if [[ `git status --porcelain` ]]; then
 #             git add stats.json
-#             git commit -S -m "Update stats.json"
+#             git commit -S --signoff -m "Update stats.json"
 #           fi
 
 #       - name: Update timeline data
@@ -101,7 +101,7 @@ jobs:
 #         run: |
 #           if [[ `git status --porcelain` ]]; then
 #             git add timeline.json
-#             git commit -S -m "Update timeline.json"
+#             git commit -S --signoff -m "Update timeline.json"
 #           fi
 
       - name: Update live data
@@ -120,7 +120,7 @@ jobs:
         run: |
           if [[ `git status --porcelain` ]]; then
             git add live.json
-            git commit -S -m "Update live.json"
+            git commit -S --signoff -m "Update live.json"
           fi
 
       - name: Push updates
