@@ -7185,6 +7185,21 @@
     "Date": "2021-05-14T00:00:00Z"
   },
   {
+    "ID": "5c2822a3-2ba2-4449-9a82-1f8eb45dc0a1",
+    "Country": "Ethiopia",
+    "CountryCode": "ET",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "9.15",
+    "Lon": "40.49",
+    "Confirmed": 265832,
+    "Deaths": 3976,
+    "Recovered": 218866,
+    "Active": 42990,
+    "Date": "2021-05-15T00:00:00Z"
+  },
+  {
     "ID": "16e941da-08de-4631-85b6-45fee320e906",
     "Country": "Ethiopia",
     "CountryCode": "ET",
