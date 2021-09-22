@@ -9120,7 +9120,7 @@
     "Date": "2021-09-20T00:00:00Z"
   },
   {
-    "ID": "49be4064-ee25-484d-8cd8-00d947f4ef98",
+    "ID": "74217ed2-9f61-4332-9d13-4b69542c0a27",
     "Country": "Ethiopia",
     "CountryCode": "ET",
     "Province": "",
@@ -9128,10 +9128,10 @@
     "CityCode": "",
     "Lat": "9.15",
     "Lon": "40.49",
-    "Confirmed": 333698,
-    "Deaths": 5164,
+    "Confirmed": 335273,
+    "Deaths": 5207,
     "Recovered": 0,
-    "Active": 328534,
-    "Date": "2021-09-21T00:00:00Z"
+    "Active": 330066,
+    "Date": "2021-09-22T00:00:00Z"
   }
 ]
