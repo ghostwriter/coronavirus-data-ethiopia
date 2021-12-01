@@ -10170,7 +10170,7 @@
     "Date": "2021-11-29T00:00:00Z"
   },
   {
-    "ID": "91f517de-4695-47b8-9911-c87797f13eb9",
+    "ID": "26249cc0-14e5-446d-9ba7-b5e3c4e0d55f",
     "Country": "Ethiopia",
     "CountryCode": "ET",
     "Province": "",
@@ -10178,10 +10178,10 @@
     "CityCode": "",
     "Lat": "9.15",
     "Lon": "40.49",
-    "Confirmed": 371346,
-    "Deaths": 6750,
+    "Confirmed": 371536,
+    "Deaths": 6755,
     "Recovered": 0,
-    "Active": 364596,
-    "Date": "2021-11-30T00:00:00Z"
+    "Active": 364781,
+    "Date": "2021-12-01T00:00:00Z"
   }
 ]
