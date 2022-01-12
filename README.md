@@ -1,4 +1,4 @@
-# Coronavirus cases in Ethiopia [![GitHub Actions status](https://github.com/COVID19Ethiopia/ethiopia-coronavirus-data-collection/workflows/update/badge.svg)](https://github.com/COVID19Ethiopia/ethiopia-coronavirus-data-collection/actions)
+# Coronavirus cases in Ethiopia [![GitHub Actions status](https://github.com/COVID19Ethiopia/ethiopia-coronavirus-data-collection/workflows/live/badge.svg)](https://github.com/COVID19Ethiopia/ethiopia-coronavirus-data-collection/actions)
 
 > Collection of Coronavirus cases and patients data for Ethiopia.
 
