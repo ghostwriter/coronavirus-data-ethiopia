@@ -62,6 +62,9 @@ jobs:
             echo "Git push was successful!"
           fi
 
+      - name: Install Dependencies
+        run: composer update --no-interaction --no-progress
+
       - name: Generate README.md
         run: php generate.php
 
