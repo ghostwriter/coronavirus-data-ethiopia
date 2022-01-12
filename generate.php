@@ -22,7 +22,7 @@ use Illuminate\Support\Collection;
     }
 
     file_put_contents('./README.md', collect([
-        '# Coronavirus cases in Ethiopia [![GitHub Actions status](https://github.com/COVID19Ethiopia/ethiopia-coronavirus-data-collection/workflows/update/badge.svg)](https://github.com/COVID19Ethiopia/ethiopia-coronavirus-data-collection/actions)',
+        '# Coronavirus cases in Ethiopia [![GitHub Actions status](https://github.com/COVID19Ethiopia/ethiopia-coronavirus-data-collection/workflows/live/badge.svg)](https://github.com/COVID19Ethiopia/ethiopia-coronavirus-data-collection/actions)',
         PHP_EOL . '> Collection of Coronavirus cases and patients data for Ethiopia.',
         PHP_EOL . '| Date | Active | Confirmed | Deaths | Recovered |',
         '|---|---|---|---|---|',
