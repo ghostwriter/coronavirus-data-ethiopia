@@ -1,0 +1,13 @@
+[
+  {
+    "tested": 197361,
+    "total": 3760,
+    "confirmed": 3759,
+    "stable": 2845,
+    "critical": 30,
+    "deceased": 63,
+    "recovered": 849,
+    "no_longer_in_ethiopia": 2,
+    "false_positives": 1
+  }
+]
