@@ -15,6 +15,12 @@ jobs:
           ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
           persist-credentials: true
 
+      - name: Setup PHP 8.1
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: 8.1
+          tools: composer:v2
+
       - name: Setup GPG keys
         id: import_gpg
         uses: crazy-max/ghaction-import-gpg@v3
@@ -30,79 +36,6 @@ jobs:
 
       - name: Setup git remote
         run: git remote add actions git@github.com:${{ github.repository }}.git
-
-#       - name: Update patients data
-#         timeout-minutes: 2
-#         uses: ghostwriter/curl@main
-#         with:
-#           args: "-L --insecure 'https://api.pmo.gov.et/v1/patients/?format=json&limit=10000000&cache_bust=${{ github.run_id }}' | jq '.' > patients.json"
-
-#       - name: Check updated patients.json
-#         run: |
-#           if [ ! -s patients.json ]; then
-#             git restore patients.json
-#           fi
-
-#       - name: Commit patients.json updates
-#         run: |
-#           if [[ `git status --porcelain` ]]; then
-#             git add patients.json
-#             git commit -S --signoff -m "Update patients.json"
-#           fi
-
-#       - name: Update cases data
-#         uses: ghostwriter/curl@main
-#         with:
-#           args: "-L --insecure 'https://api.pmo.gov.et/v1/cases/?format=json&cache_bust=${{ github.run_id }}' | jq '.' > cases.json"
-
-#       - name: Check updated cases.json
-#         run: |
-#           if [ ! -s cases.json ]; then
-#             git restore cases.json
-#           fi
-
-#       - name: Commit cases.json updates
-#         run: |
-#           if [[ `git status --porcelain` ]]; then
-#             git add cases.json
-#             git commit -S --signoff -m "Update cases.json"
-#           fi
-
-#       - name: Update stats data
-#         uses: ghostwriter/curl@main
-#         with:
-#           args: "-L --insecure -H 'Cache-Control: no-cache' -H 'Subscription-Key: ${{ secrets.SUBSCRIPTION_KEY }}' 'https://api.smartable.ai/coronavirus/stats/ET?cache_bust=${{ github.run_id }}' | jq '.' > stats.json"
-
-#       - name: Check updated stats.json
-#         run: |
-#           if [ ! -s stats.json ]; then
-#             git restore stats.json
-#           fi
-
-#       - name: Commit stats.json updates
-#         run: |
-#           if [[ `git status --porcelain` ]]; then
-#             git add stats.json
-#             git commit -S --signoff -m "Update stats.json"
-#           fi
-
-#       - name: Update timeline data
-#         uses: ghostwriter/curl@main
-#         with:
-#           args: "-L --insecure 'https://api.thevirustracker.com/free-api?countryTimeline=ET&cache_bust=${{ github.run_id }}' | jq '.' > timeline.json"
-
-#       - name: Check updated timeline.json
-#         run: |
-#           if [ ! -s timeline.json ]; then
-#             git restore timeline.json
-#           fi
-
-#       - name: Commit timeline.json updates
-#         run: |
-#           if [[ `git status --porcelain` ]]; then
-#             git add timeline.json
-#             git commit -S --signoff -m "Update timeline.json"
-#           fi
 
       - name: Update live data
         uses: ghostwriter/curl@main
@@ -121,6 +54,29 @@ jobs:
           if [[ `git status --porcelain` ]]; then
             git add live.json
             git commit -S --signoff -m "Update live.json"
+          fi
+
+      - name: Push updates
+        run: |
+          if [[ "$(git push -u actions main --porcelain)" == *"Done"* ]]; then
+            echo "Git push was successful!"
+          fi
+
+      - name: Generate README.md
+        run: php generate.php
+
+      - name: Check updated README.md
+        run: |
+          cat README.md;
+          if [ ! -s README.md ]; then
+            git restore README.md
+          fi
+
+      - name: Commit README.md updates
+        run: |
+          if [[ `git status --porcelain` ]]; then
+            git add README.md
+            git commit -S --signoff -m "Update README.md"
           fi
 
       - name: Push updates
