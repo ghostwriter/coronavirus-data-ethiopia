@@ -1,0 +1,9 @@
+{
+    "require": {
+        "illuminate/collections": "*",
+        "illuminate/support": "*"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "*"
+    }
+}
