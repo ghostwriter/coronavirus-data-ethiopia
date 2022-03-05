@@ -11580,7 +11580,7 @@
     "Date": "2022-03-03T00:00:00Z"
   },
   {
-    "ID": "b86cffe7-1731-4799-af45-819c0a4ec784",
+    "ID": "33a1bb10-4e98-4ebc-8a2f-bb0a53be11ea",
     "Country": "Ethiopia",
     "CountryCode": "ET",
     "Province": "",
@@ -11592,6 +11592,6 @@
     "Deaths": 7473,
     "Recovered": 0,
     "Active": 461377,
-    "Date": "2022-03-04T00:00:00Z"
+    "Date": "2022-03-05T00:00:00Z"
   }
 ]
