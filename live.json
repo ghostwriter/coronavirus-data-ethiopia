@@ -13155,6 +13155,36 @@
     "Date": "2022-06-16T00:00:00Z"
   },
   {
+    "ID": "8484405f-fece-4521-a900-6057e06633ec",
+    "Country": "Ethiopia",
+    "CountryCode": "ET",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "9.15",
+    "Lon": "40.49",
+    "Confirmed": 482888,
+    "Deaths": 7522,
+    "Recovered": 0,
+    "Active": 475366,
+    "Date": "2022-06-17T00:00:00Z"
+  },
+  {
+    "ID": "8321adec-7945-4507-ab02-82cd1cac8eaa",
+    "Country": "Ethiopia",
+    "CountryCode": "ET",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "9.15",
+    "Lon": "40.49",
+    "Confirmed": 483739,
+    "Deaths": 7522,
+    "Recovered": 0,
+    "Active": 476217,
+    "Date": "2022-06-18T00:00:00Z"
+  },
+  {
     "ID": "bd93889a-9c3f-4749-a9d8-ec1199e38c35",
     "Country": "Ethiopia",
     "CountryCode": "ET",
