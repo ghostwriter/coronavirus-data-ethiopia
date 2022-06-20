@@ -13185,7 +13185,7 @@
     "Date": "2022-06-18T00:00:00Z"
   },
   {
-    "ID": "bd93889a-9c3f-4749-a9d8-ec1199e38c35",
+    "ID": "1568ce59-08f5-4b15-9ec5-a47fe255cbea",
     "Country": "Ethiopia",
     "CountryCode": "ET",
     "Province": "",
@@ -13193,10 +13193,10 @@
     "CityCode": "",
     "Lat": "9.15",
     "Lon": "40.49",
-    "Confirmed": 483739,
-    "Deaths": 7522,
+    "Confirmed": 484138,
+    "Deaths": 7523,
     "Recovered": 0,
-    "Active": 476217,
-    "Date": "2022-06-19T00:00:00Z"
+    "Active": 476615,
+    "Date": "2022-06-20T00:00:00Z"
   }
 ]
