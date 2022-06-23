@@ -13230,6 +13230,21 @@
     "Date": "2022-06-21T00:00:00Z"
   },
   {
+    "ID": "96b30d2e-c80a-4776-af05-7f4beecb2969",
+    "Country": "Ethiopia",
+    "CountryCode": "ET",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "9.15",
+    "Lon": "40.49",
+    "Confirmed": 485774,
+    "Deaths": 7526,
+    "Recovered": 0,
+    "Active": 478248,
+    "Date": "2022-06-22T00:00:00Z"
+  },
+  {
     "ID": "48193534-d04a-4b73-a03a-d9e449dd606e",
     "Country": "Ethiopia",
     "CountryCode": "ET",
