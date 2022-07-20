@@ -13560,6 +13560,21 @@
     "Date": "2022-07-13T00:00:00Z"
   },
   {
+    "ID": "a9a7f626-ffed-46fb-b1bc-4bb888838c07",
+    "Country": "Ethiopia",
+    "CountryCode": "ET",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "9.15",
+    "Lon": "40.49",
+    "Confirmed": 490816,
+    "Deaths": 7559,
+    "Recovered": 0,
+    "Active": 483257,
+    "Date": "2022-07-14T00:00:00Z"
+  },
+  {
     "ID": "2a1cbf23-2980-4571-af34-cb0bf7fedae1",
     "Country": "Ethiopia",
     "CountryCode": "ET",
@@ -13573,6 +13588,21 @@
     "Recovered": 0,
     "Active": 483364,
     "Date": "2022-07-15T00:00:00Z"
+  },
+  {
+    "ID": "23551e32-6e18-43fd-99a2-7df1c306e214",
+    "Country": "Ethiopia",
+    "CountryCode": "ET",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "9.15",
+    "Lon": "40.49",
+    "Confirmed": 491031,
+    "Deaths": 7561,
+    "Recovered": 0,
+    "Active": 483470,
+    "Date": "2022-07-16T00:00:00Z"
   },
   {
     "ID": "7b094b60-7aa1-4429-9284-917b4359c656",
