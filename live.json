@@ -15448,5 +15448,20 @@
     "Recovered": 0,
     "Active": 486668,
     "Date": "2022-11-16T00:00:00Z"
+  },
+  {
+    "ID": "81e9a0c6-ccac-4712-9cd9-2e7b9efa9f12",
+    "Country": "Ethiopia",
+    "CountryCode": "ET",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "9.15",
+    "Lon": "40.49",
+    "Confirmed": 494270,
+    "Deaths": 7572,
+    "Recovered": 0,
+    "Active": 486698,
+    "Date": "2022-11-17T00:00:00Z"
   }
 ]
