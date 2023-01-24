@@ -16395,6 +16395,21 @@
     "Date": "2023-01-18T00:00:00Z"
   },
   {
+    "ID": "a0516e50-27d0-4d95-adca-44b23a396105",
+    "Country": "Ethiopia",
+    "CountryCode": "ET",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "9.15",
+    "Lon": "40.49",
+    "Confirmed": 499255,
+    "Deaths": 7572,
+    "Recovered": 0,
+    "Active": 491683,
+    "Date": "2023-01-19T00:00:00Z"
+  },
+  {
     "ID": "fb71e0c6-566c-4936-9ef9-45c69c10d1d0",
     "Country": "Ethiopia",
     "CountryCode": "ET",
@@ -16408,5 +16423,50 @@
     "Recovered": 0,
     "Active": 491709,
     "Date": "2023-01-20T00:00:00Z"
+  },
+  {
+    "ID": "25203f19-cf93-45c3-9f7c-7aa6a1be76fe",
+    "Country": "Ethiopia",
+    "CountryCode": "ET",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "9.15",
+    "Lon": "40.49",
+    "Confirmed": 499295,
+    "Deaths": 7572,
+    "Recovered": 0,
+    "Active": 491723,
+    "Date": "2023-01-21T00:00:00Z"
+  },
+  {
+    "ID": "1c7ddc1b-2d1f-43d6-bfca-23b61645a26e",
+    "Country": "Ethiopia",
+    "CountryCode": "ET",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "9.15",
+    "Lon": "40.49",
+    "Confirmed": 499306,
+    "Deaths": 7572,
+    "Recovered": 0,
+    "Active": 491734,
+    "Date": "2023-01-22T00:00:00Z"
+  },
+  {
+    "ID": "b84db605-f7f1-4e06-a145-ea65882ea6c8",
+    "Country": "Ethiopia",
+    "CountryCode": "ET",
+    "Province": "",
+    "City": "",
+    "CityCode": "",
+    "Lat": "9.15",
+    "Lon": "40.49",
+    "Confirmed": 499329,
+    "Deaths": 7572,
+    "Recovered": 0,
+    "Active": 491757,
+    "Date": "2023-01-23T00:00:00Z"
   }
 ]
