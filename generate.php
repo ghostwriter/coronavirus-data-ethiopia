@@ -23,7 +23,10 @@ use Illuminate\Support\Collection;
 
     file_put_contents('./README.md', collect([
         '# Coronavirus cases in Ethiopia [![GitHub Actions status](https://github.com/COVID19Ethiopia/coronavirus-data/workflows/live/badge.svg)](https://github.com/COVID19Ethiopia/coronavirus-data/actions)',
-        PHP_EOL . '> Collection of Coronavirus cases and patients data for Ethiopia.',
+            PHP_EOL . 'Collection of Coronavirus cases and patients data for Ethiopia.',
+            
+            PHP_EOL . '> On March 10, 2023, the [Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19) discontinued its collecting and reporting of global COVID-19 data. [commit](https://github.com/CSSEGISandData/COVID-19/commit/4360e50239b4eb6b22f3a1759323748f36752177)',
+            
         PHP_EOL . '| Date | Active | Confirmed | Deaths | Recovered |',
         '|---|---|---|---|---|',
     ])->merge(
